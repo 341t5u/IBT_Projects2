@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Ethiopia Main dishes,Reserve Your Table Online Today!"
+    />
+    <title>Reservation Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Habesha Eatery Landing Page</h1>
+      <h2>Welcome to Habesha Eatery</h2>
+    </header>
+    <form action="/reserve" method="post">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" required />
+      <label for="phone">Phone</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="09[0-9]{8}"
+        title="format:09********"
+        placeholder="0911......."
+        required
+      />
+      <label for="guests">Guests number</label>
+      <input
+        id="guests"
+        name="guests"
+        type="number"
+        min="1"
+        max="10"
+        required
+      />
+      <label for="date">Date</label>
+      <input type="date" name="date" required />
+      <button type="submit">Reserve</button>
+    </form>
+    <br />
+    <table>
+      <caption>
+        Menu Table
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Food</th>
+          <th scope="col">Price(ETB)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Tibs</th>
+          <td>1200 birr</td>
+        </tr>
+        <tr>
+          <th scope="row">Dor wot</th>
+          <td>2000 birr</td>
+        </tr>
+        <tr>
+          <th scope="row">Ageligil</th>
+          <td>1300 birr</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>Special Food for VIP</h4>
+    <img
+      src="../assets/Kitfo.webp"
+      alt="Kitfo(Chopped Raw meat with butter and spicy called mitmita)"
+      width="200"
+      height="150"
+      loading="lazy"
+    />
+    <h4>Address</h4>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4747.615061909658!2d38.78599680698492!3d8.99947701755256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8598970514a3%3A0x91ab27e25d51854f!2sAberus%20Kitfo!5e0!3m2!1sen!2set!4v1786091236239!5m2!1sen!2set"
+      width="400"
+      height="250"
+      loading="lazy"
+    ></iframe>
+  </body>
+</html>
